@@ -15,10 +15,10 @@ public class Main {
         System.out.println("Задача1");
         int[] payments = generateRandomArray();
         System.out.println(Arrays.toString(payments));
-        int sum=0;
+        int sum = 0;
         for (int i = 0; i < payments.length; i++) {
-            sum=sum+payments[i];
-            System.out.println("сумма затра за месяц"+sum+"рублей");
+            sum = sum + payments[i];
+            System.out.println("сумма затра за месяц" + sum + "рублей");
 
         }
 
@@ -32,23 +32,24 @@ public class Main {
         }
         return arr;
     }
-    private static void task2(){
+
+    private static void task2() {
         System.out.println("Задача2");
-        int[] payments= generateRandomArray();
+        int[] payments = generateRandomArray();
         System.out.println(Arrays.toString(payments));
-        int min= payments[0];
-        int max =payments[0];
-        for (int i = 0; i <payments.length ; i++) {
-            if(payments[i]>max){
-                max=payments[i];
+        int min = payments[0];
+        int max = payments[0];
+        for (int i = 0; i < payments.length; i++) {
+            if (payments[i] > max) {
+                max = payments[i];
             }
-            if(payments[i]<min){
-                min=payments[i];
+            if (payments[i] < min) {
+                min = payments[i];
             }
 
 
         }
-        System.out.print("минимальная сумма"+min+"рублей Максимальная"+max+"рублей");
+        System.out.print("минимальная сумма" + min + "рублей Максимальная" + max + "рублей");
     }
 
     private static int[] generatetRandomArray() {
@@ -60,22 +61,33 @@ public class Main {
         return arr;
 
     }
+
     //task3
     private static void task3() {
         System.out.println();
         System.out.println("Задача3");
-        int[] payments= generateRandomArray();
+        int[] payments = generateRandomArray();
         System.out.println(Arrays.toString(payments));
-        int sum=0;
+        int sum = 0;
         for (int i = 0; i < payments.length; i++) {
-            sum=sum+payments[i];
+            sum = sum + payments[i];
 
 
         }
-        System.out.printf("средняя сумма трат за месяц составила%.2f рублей",(double) sum/payments.length);
+        System.out.printf("средняя сумма трат за месяц составила%.2f рублей", (double) sum / payments.length);
 
 
     }
 
+    private static void task4() {
+        System.out.println();
+        System.out.println("Задача4");
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
 
+        }
+
+
+    }
 }
